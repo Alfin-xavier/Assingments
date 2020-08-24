@@ -17,7 +17,7 @@ public class Sub extends Add
 			a[i]=scr.nextInt();
 		}
 		sum=a.length > 0 ? a[0] : 0;
-		for()
+		for ( i = 1; i< a.length; i++ ) 
 		{
 			sum=sum-a[i];
 		}
