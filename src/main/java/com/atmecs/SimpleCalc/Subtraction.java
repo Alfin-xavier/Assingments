@@ -1,4 +1,4 @@
-package com.atmecs.SimpleCalc;
+package com.atmecs.simplecalc;
 
 import java.util.Scanner;
 

@@ -1,13 +1,13 @@
-package com.atmecs.UpdatedCalc;
+package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-public class Add 
+public class Multiplication extends Subtraction
 {
-	public void add() 
+	void mul()
 	{
 		Scanner scr = new Scanner(System.in);
-		int n,sum=0,i;
+		int n,sum=1,i;
 		System.out.println("Enter the quantity:");
 		n=scr.nextInt();
 		System.out.println("Enter the number:");
@@ -15,8 +15,8 @@ public class Add
 		for(i=0;i<n;i++)
 		{
 			a[i]=scr.nextInt();
-			sum=sum+a[i];
+			sum=sum*a[i];
 		}
-		System.out.println("Addition of the Numbers:" + sum);
+		System.out.println("Multiplication of the Numbers:" + sum);
 	}
 }

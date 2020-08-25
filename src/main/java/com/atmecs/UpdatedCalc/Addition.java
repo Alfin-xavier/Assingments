@@ -1,10 +1,10 @@
-package com.atmecs.UpdatedCalc;
+package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-public class Sub extends Add
+public class Addition 
 {
-	void sub()
+	public void add() 
 	{
 		Scanner scr = new Scanner(System.in);
 		int n,sum=0,i;
@@ -15,12 +15,8 @@ public class Sub extends Add
 		for(i=0;i<n;i++)
 		{
 			a[i]=scr.nextInt();
+			sum=sum+a[i];
 		}
-		sum=a.length > 0 ? a[0] : 0;
-		for ( i = 1; i< a.length; i++ ) 
-		{
-			sum=sum-a[i];
-		}
-		System.out.println("Subtraction of the Numbers:" + sum);
+		System.out.println("Addition of the Numbers:" + sum);
 	}
 }

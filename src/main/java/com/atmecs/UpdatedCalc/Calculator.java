@@ -1,15 +1,15 @@
-package com.atmecs.UpdatedCalc;
+package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-public class Calc {
+public class Calculator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scr=new Scanner(System.in);
 		int opt;
 		String op;
-		Div d=new Div();
+		Division div=new Division();
 		do
 		{
 			System.out.println("** Arithmetic Calculations **");	
@@ -20,16 +20,16 @@ public class Calc {
 			switch(opt)
 			{
 			case 1:
-					d.add();
+					div.add();
 					break;
 			case 2:
-					d.sub();
+					div.sub();
 					break;
 			case 3:
-					d.mul();
+					div.mul();
 					break;
 			case 4:
-					d.div();
+					div.div();
 					break;
 			default: 
 				System.out.println("invalid Selection!!");

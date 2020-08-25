@@ -1,8 +1,8 @@
-package com.atmecs.UpdatedCalc;
+package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-public class Div extends Mul
+public class Division extends Multiplication
 {
 	void div() 
 	{

@@ -1,4 +1,4 @@
-package com.atmecs.SimpleCalc;
+package com.atmecs.simplecalc;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class Calculator {
 		Scanner scr=new Scanner(System.in);
 		int opt;
 		String op;
-		Division d=new Division();
+		Division div=new Division();
 		do
 		{
 			System.out.println("** Arithmetic Calculations **");	
@@ -20,16 +20,16 @@ public class Calculator {
 			switch(opt)
 			{
 			case 1:
-					
+					div.add();
 					break;
 			case 2:
-					d.sub();
+					div.sub();
 					break;
 			case 3:
-					d.mul();
+					div.mul();
 					break;
 			case 4:
-					d.div();
+					div.div();
 					break;
 			default: 
 				System.out.println("invalid Selection!!");
