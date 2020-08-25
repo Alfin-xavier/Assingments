@@ -20,7 +20,7 @@ public class Calc {
 			switch(opt)
 			{
 			case 1:
-					
+					d.add();
 					break;
 			case 2:
 					d.sub();
