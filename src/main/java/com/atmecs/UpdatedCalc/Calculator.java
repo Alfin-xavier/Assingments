@@ -9,27 +9,30 @@ public class Calculator {
 		Scanner scr=new Scanner(System.in);
 		int opt;
 		String op;
-		Division div=new Division();
+		Expression exp=new Expression();
 		do
 		{
-			System.out.println("** Arithmetic Calculations **");	
-			System.out.println("1. Addition  2.Subtraction  3.Multiplication  4.Division");
+			System.out.println("** Arithmetic Calculations \n **");	
+			System.out.println("1. Addition  2.Subtraction  3.Multiplication  4.Division  5.Evaluate An Expression\n");
 			System.out.println("Which operation you want to perform:");
 			opt=scr.nextInt();
 			
 			switch(opt)
 			{
 			case 1:
-					div.add();
+					exp.add();
 					break;
 			case 2:
-					div.sub();
+					exp.sub();
 					break;
 			case 3:
-					div.mul();
+					exp.mul();
 					break;
 			case 4:
-					div.div();
+					exp.div();
+					break;
+			case 5: 
+					exp.evaluate();
 					break;
 			default: 
 				System.out.println("invalid Selection!!");

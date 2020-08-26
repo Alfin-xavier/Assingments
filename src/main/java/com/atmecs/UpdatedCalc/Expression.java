@@ -1,12 +1,12 @@
-package com.atmecs.Evaluation;
+package com.atmecs.updatedcalc;
 
 import java.util.*;
  
-public class Expression 
+public class Expression extends Division
 {
-    public static void main(String[] args)
-    { 
-        Scanner scan = new Scanner(System.in);
+	void evaluate()
+	{
+		Scanner scan = new Scanner(System.in);
         
         Stack<Integer> op  = new Stack<Integer>();
         Stack<Double> val = new Stack<Double>();
@@ -24,7 +24,7 @@ public class Expression
             if (ch == '-')
                 temp = "-" + temp;
             else if (ch != '+' &&  ch != '*' && ch != '/')
-               temp = temp + ch;
+                temp = temp + ch;
             else
             {
                 val.push(Double.parseDouble(temp));
@@ -76,10 +76,11 @@ public class Expression
                 val.push(valtmp.pop());
             while (!optmp.isEmpty())
                 op.push(optmp.pop());
-           
             if (it)
-                i--;                            
+                i--; 
+                               
         }    
         System.out.println("\nResult = "+val.pop());        
-    }
+    
 }
+	}
