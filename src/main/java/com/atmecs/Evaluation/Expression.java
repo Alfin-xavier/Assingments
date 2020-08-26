@@ -1,4 +1,4 @@
-package com.atmecs.EvaluateExpression;
+package com.atmecs.Evaluation;
 
 import java.util.*;
  
@@ -11,7 +11,7 @@ public class Expression
         Stack<Double> val = new Stack<Double>();
         Stack<Integer> optmp  = new Stack<Integer>();
         Stack<Double> valtmp = new Stack<Double>();
-        System.out.println("Enter expression\n");
+        System.out.println("Enter the expression:\n");
         String input = scan.next();
         input = "0" + input;
         input = input.replaceAll("-","+-");
@@ -31,7 +31,7 @@ public class Expression
             }
         }
         val.push(Double.parseDouble(temp));
-        char operators[] = {'/','*','+','-'};
+        char operators[] = {'/','*','+'};
         for (int i = 0; i <4; i++)
         {
             boolean it = false;
@@ -60,13 +60,7 @@ public class Expression
                         valtmp.push(v2 + v1);
                         it = true;
                         break;
-                    }           
-                    else if (i == 3)
-                    {
-                        valtmp.push(v2 - v1);
-                        it = true;
-                        break;
-                    }                                        
+                    }                                                
                 }
                 else
                 {
