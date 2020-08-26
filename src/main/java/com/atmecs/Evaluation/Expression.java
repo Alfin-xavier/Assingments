@@ -7,13 +7,15 @@ public class Expression
     public static void main(String[] args)
     { 
         Scanner scan = new Scanner(System.in);
+        
         Stack<Integer> op  = new Stack<Integer>();
         Stack<Double> val = new Stack<Double>();
+       
         Stack<Integer> optmp  = new Stack<Integer>();
         Stack<Double> valtmp = new Stack<Double>();
+        
         System.out.println("Enter the expression:\n");
         String input = scan.next();
-        input = "0" + input;
         input = input.replaceAll("-","+-");
         String temp = "";
         for (int i = 0;i < input.length();i++)
