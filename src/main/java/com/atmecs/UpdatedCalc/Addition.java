@@ -2,9 +2,9 @@ package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-public class Addition 
+public class Addition
 {
-	public void add() 
+	public void add() throws NegativeException
 	{
 		Scanner scr = new Scanner(System.in);
 		int n,sum=0,i;
@@ -15,8 +15,14 @@ public class Addition
 		for(i=0;i<n;i++)
 		{
 			a[i]=scr.nextInt();
-			sum=sum+a[i];
+			if(a[i]<0)
+			{
+				throw new NegativeException();
+			}
+			else
+				sum=sum+a[i];
 		}
 		System.out.println("Addition of the Numbers:" + sum);
 	}
+	
 }

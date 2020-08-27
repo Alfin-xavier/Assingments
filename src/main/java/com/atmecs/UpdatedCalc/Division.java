@@ -6,7 +6,8 @@ public class Division extends Multiplication
 {
 	void div() 
 	{
-		// TODO Auto-generated method stub
+		try
+		{
 		Scanner scr = new Scanner(System.in);
 		int n,i,j;
 		System.out.println("Enter the quantity:");
@@ -23,5 +24,11 @@ public class Division extends Multiplication
 			sum=sum/a[j];
 		}
 			System.out.println("Division of the Numbers:" + sum);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("Found Exception while performing Division with zero" + ae);
+			
+		}
 	}
 }

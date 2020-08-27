@@ -4,15 +4,16 @@ import java.util.Scanner;
 
 public class Calculator {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args)
+	{
+		
 		Scanner scr=new Scanner(System.in);
 		int opt;
 		String op;
 		Expression exp=new Expression();
 		do
 		{
-			System.out.println("** Arithmetic Calculations \n **");	
+			System.out.println("\t\tArithmetic Calculations \n");	
 			System.out.println("1. Addition  2.Subtraction  3.Multiplication  4.Division  5.Evaluate An Expression\n");
 			System.out.println("Which operation you want to perform:");
 			opt=scr.nextInt();
@@ -20,7 +21,7 @@ public class Calculator {
 			switch(opt)
 			{
 			case 1:
-					exp.add();
+					//exp.add();
 					break;
 			case 2:
 					exp.sub();
@@ -41,7 +42,8 @@ public class Calculator {
 			op=scr.next();
 			
 		}while(op.equals("yes"));
-		
+		scr.close();
+	
 			
 	}
 
