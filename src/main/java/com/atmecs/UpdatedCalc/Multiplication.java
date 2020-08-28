@@ -6,6 +6,8 @@ public class Multiplication extends Subtraction
 {
 	void mul()
 	{
+		try
+		{
 		Scanner scr = new Scanner(System.in);
 		int n,sum=1,i;
 		System.out.println("Enter the quantity:");
@@ -18,5 +20,14 @@ public class Multiplication extends Subtraction
 			sum=sum*a[i];
 		}
 		System.out.println("Multiplication of the Numbers:" + sum);
+		}
+		catch(InputMismatchException ie)
+		{
+			System.out.println("Exception found cause of the mismatched input "+ie+"\n");
+		}
+		finally
+		{
+			System.out.println("Give inputs as per the type..\n");
+		}
 	}
 }

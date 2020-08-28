@@ -6,6 +6,8 @@ public class Division extends Multiplication
 {
 	void div() 
 	{
+		try
+		{
 		Scanner scr = new Scanner(System.in);
 		int n,i,j;
 		System.out.println("Enter the quantity:");
@@ -22,6 +24,15 @@ public class Division extends Multiplication
 			sum=sum/a[j];
 		}
 			System.out.println("Division of the Numbers:" + sum+"\n");
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("The number can't divided by zero "+ae+"\n");
+		}
+		finally
+		{
+			System.out.println("Tip: Don't give zero as divisor!!\n");
+		}
 	}
 	}
 
