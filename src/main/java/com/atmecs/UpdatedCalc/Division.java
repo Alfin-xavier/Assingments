@@ -1,6 +1,6 @@
 package com.atmecs.updatedcalc;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Division extends Multiplication
 {
@@ -13,7 +13,7 @@ public class Division extends Multiplication
 		System.out.println("Enter the quantity:");
 		n=scr.nextInt();
 		System.out.println("Enter the number:");
-		int a[]=new int[n];
+		int a[]=new int[3];
 		for(i=0;i<n;i++)
 		{
 			a[i]=scr.nextInt();
@@ -29,9 +29,17 @@ public class Division extends Multiplication
 		{
 			System.out.println("The number can't divided by zero "+ae+"\n");
 		}
+		catch(InputMismatchException ie)
+		{
+			System.out.println("Exception found cause of the mismatched input "+ie+"\n");
+		}
+		catch(ArrayIndexOutOfBoundsException ai)
+		{
+			System.out.println("Exception found cause of the array limit exceeds "+ai+"\n");
+		}
 		finally
 		{
-			System.out.println("Tip: Don't give zero as divisor!!\n");
+			System.out.println("Tip: Give the Inputs Properly!!\n");
 		}
 	}
 	}
