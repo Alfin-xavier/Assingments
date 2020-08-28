@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Addition
 {
-	public void add() throws NegativeException
+	public void add() throws NegativeException 
 	{
 		Scanner scr = new Scanner(System.in);
 		int n,sum=0,i;
@@ -17,12 +17,14 @@ public class Addition
 			a[i]=scr.nextInt();
 			if(a[i]<0)
 			{
-				throw new NegativeException();
+				throw new NegativeException("Exception found cause of the negative input:"+a[i]);
 			}
 			else
 				sum=sum+a[i];
 		}
 		System.out.println("Addition of the Numbers:" + sum);
+	
+		
 	}
 	
 }
