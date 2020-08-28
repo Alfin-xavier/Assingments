@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Calculator {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws NegativeException
 	{
 		
 		Scanner scr=new Scanner(System.in);
@@ -21,7 +21,7 @@ public class Calculator {
 			switch(opt)
 			{
 			case 1:
-					//exp.add();
+					exp.add();
 					break;
 			case 2:
 					exp.sub();

@@ -10,7 +10,7 @@ public class NegativeException extends Exception {
 		}
 		catch(Exception e)
 		{
-			
+			System.out.println("User entered the negative input:"+e);
 		}
 	}
 
