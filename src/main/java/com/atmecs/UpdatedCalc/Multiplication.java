@@ -2,7 +2,7 @@ package com.atmecs.updatedcalc;
 
 import java.util.*;
 
-public class Multiplication extends Subtraction
+public class Multiplication
 {
 	void mul()
 	{

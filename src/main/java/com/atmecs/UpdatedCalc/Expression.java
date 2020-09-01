@@ -2,7 +2,7 @@ package com.atmecs.updatedcalc;
 
 import java.util.*;
  
-public class Expression extends Division
+public class Expression
 {
 	void evaluate()
 	{

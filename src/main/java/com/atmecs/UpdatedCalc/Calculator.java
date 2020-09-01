@@ -10,7 +10,7 @@ public class Calculator {
 		Scanner scr=new Scanner(System.in);
 		int opt;
 		String op;
-		Expression exp=new Expression();
+		
 		do
 		{
 			System.out.println("\t\tArithmetic Calculations \n");	
@@ -21,18 +21,23 @@ public class Calculator {
 			switch(opt)
 			{
 			case 1:
-					exp.add();
+					Addition ad=new Addition();
+					ad.add();
 					break;
 			case 2:
-					exp.sub();
+					Subtraction sub=new Subtraction();
+					sub.sub();
 					break;
 			case 3:
-					exp.mul();
+					Multiplication mul=new Multiplication();
+					mul.mul();
 					break;
 			case 4:
-					exp.div();
+					Division div=new Division();
+					div.div();
 					break;
 			case 5: 
+					Expression exp=new Expression();
 					exp.evaluate();
 					break;
 			default: 

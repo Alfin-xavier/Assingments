@@ -2,7 +2,7 @@ package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-public class Subtraction extends Addition
+public class Subtraction 
 {
 	void sub()
 	{

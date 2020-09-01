@@ -7,6 +7,5 @@ public class NegativeException extends Exception
 	{
 		super(s);
 	}
-	
 
 }
