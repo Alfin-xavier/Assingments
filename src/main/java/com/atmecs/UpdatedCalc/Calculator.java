@@ -6,9 +6,10 @@ public class Calculator {
 
 	public static void main(String[] args) throws NegativeException
 	{
-		
 		Scanner scr=new Scanner(System.in);
-		int opt;
+		try
+		{
+		int opt,n;
 		String op;
 		
 		do
@@ -17,7 +18,6 @@ public class Calculator {
 			System.out.println("1. Addition  2.Subtraction  3.Multiplication  4.Division  5.Evaluate An Expression\n");
 			System.out.println("Which operation you want to perform:");
 			opt=scr.nextInt();
-			
 			switch(opt)
 			{
 			case 1:
@@ -47,8 +47,16 @@ public class Calculator {
 			op=scr.next();
 			
 		}while(op.equals("yes"));
-		scr.close();
-	
+	}
+	catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+		finally
+		{
+			scr.close();
+			System.out.println("Program Exited..\n");
+		}
 			
 	}
 
