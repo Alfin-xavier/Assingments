@@ -1,6 +1,6 @@
 package com.atmecs.updatedcalc;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Subtraction 
 {
@@ -8,19 +8,21 @@ public class Subtraction
 	{
 		
 		Scanner scr = new Scanner(System.in);
-		int n,sum=0,i;
+		int n,sum=0,i,list;
+		List<Integer> ls=new LinkedList<Integer>();
 		System.out.println("Enter the quantity:");
 		n=scr.nextInt();
 		System.out.println("Enter the number:");
-		int a[]=new int[4];
 		for(i=0;i<n;i++)
 		{
-			a[i]=scr.nextInt();
+			list=scr.nextInt();
+			ls.add(list);
 		}
-		sum=a.length > 0 ? a[0] : 0;
-		for ( i = 1; i< a.length; i++ ) 
+		
+		sum=ls.size()> 0 ? ls.get(0) : 0;
+		for ( i = 1; i< ls.size(); i++ ) 
 		{
-			sum=sum-a[i];
+			sum=sum-ls.get(i);
 		}
 		System.out.println("Subtraction of the Numbers:" + sum);
 		

@@ -7,11 +7,10 @@ public class Calculator {
 	public static void main(String[] args) throws NegativeException
 	{
 		Scanner scr=new Scanner(System.in);
+		String op;
 		try
 		{
 		int opt,n;
-		String op;
-		
 		do
 		{
 			System.out.println("\t\tArithmetic Calculations \n");	
@@ -37,25 +36,26 @@ public class Calculator {
 					div.div();
 					break;
 			case 5: 
-					Expression exp=new Expression();
-					exp.evaluate();
+					Evaluation ev=new Evaluation();
+					ev.evaluation();
 					break;
 			default: 
 				System.out.println("invalid Selection!!");
 			}
-			System.out.println("Do you want to continue the process? YES or No");
+			System.out.println("Do you want to continue the process? YES or No \n");
 			op=scr.next();
 			
 		}while(op.equals("yes"));
 	}
 	catch(Exception ex)
 		{
-			System.out.println(ex);
+			System.out.println(ex+"\n");
 		}
 		finally
 		{
-		
-			System.out.println("Program Exited..\n");
+			
+			System.out.println("Process Stopped cause of the exception.");
+			
 		}
 			
 	}

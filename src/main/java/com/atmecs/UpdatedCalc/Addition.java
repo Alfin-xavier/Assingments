@@ -1,5 +1,6 @@
 package com.atmecs.updatedcalc;
 
+import java.util.*;
 import java.util.Scanner;
 
 public class Addition
@@ -7,20 +8,21 @@ public class Addition
 	public void add() throws NegativeException 
 	{
 		Scanner scr = new Scanner(System.in);
-		int n,sum=0,i;
+		int n,sum=0,i,array;
+		List<Integer> arr=new ArrayList<Integer>();
 		System.out.println("Enter the quantity:");
 		n=scr.nextInt();
 		System.out.println("Enter the number:");
-		int a[]=new int[n];
 		for(i=0;i<n;i++)
 		{
-			a[i]=scr.nextInt();
-			if(a[i]<0)
+		 array=scr.nextInt();
+		 arr.add(array);
+     		if(arr.get(i)<0)
 			{
-				throw new NegativeException("Exception found cause of the negative input:"+a[i]);
+				throw new NegativeException("Exception found cause of the negative input:"+arr);
 			}
 			else
-				sum=sum+a[i];
+				sum=sum+arr.get(i);
 		}
 		System.out.println("Addition of the Numbers:" + sum);
 	

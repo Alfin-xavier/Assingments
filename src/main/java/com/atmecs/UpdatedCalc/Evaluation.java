@@ -2,36 +2,45 @@ package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-public class Evaluation
+public class Evaluation 
 {
-    public static void main(String[] args) 
-    {
-        Scanner input = new Scanner(System.in);
-        int result = 0;
-        System.out.print("Enter an expression to compute: ");
-        String userInput = "3+4*5-4/2";
-        int count=userInput.indexOf(userInput);
-        String ch[] = userInput.split(" ");
-        switch (ch[count].charAt(0)) {
-            case '+':
-                result = Integer.parseInt(ch[0])
-                        + Integer.parseInt(ch[2]);
-                break;
-            case '-':
-                result = Integer.parseInt(ch[0])
-                        - Integer.parseInt(ch[2]);
-                break;
-            case '*':
-                result = Integer.parseInt(ch[0])
-                        * Integer.parseInt(ch[2]);
-                break;
-            case '/':
-                result = Integer.parseInt(ch[0])
-                        / Integer.parseInt(ch[2]);
-        }
+	public void evaluation()
+	{
+	Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Expression: ");
+		String exp = sc.next();
+		String[] operands = exp.split("[\\+\\-\\*\\/]");
+		String[] operators = exp.split("\\d+");
+		int result = 0;
+		for (int i = 0; i < operators.length; i++) 
+		{
+			int number = Integer.parseInt(operands[i]);
+			
+			if (operators[i].equals("+")) 
+			{
+				result = result + number;
+			} 
+			else if (operators[i].equals("-"))
+			{
+				result = result - number;
+			} 
+			else if (operators[i].equals("*"))
+			{
+				result = result * number;
+			} 
+			else if (operators[i].equals("/"))
+			{
+				result = result / number;
+			} 
+			else 
+			{
+				result = result + number;
+			}
+		}
+		System.out.println("Result = " + result);
 
-        // Display result
-        System.out.println(ch[0] + ' ' + ch[1] + ' ' + ch[2] + " = " + result);
-    }
+		sc.close();
+	}
+	
 
 }
