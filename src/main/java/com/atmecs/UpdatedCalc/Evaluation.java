@@ -1,33 +1,24 @@
 package com.atmecs.updatedcalc;
 
-public class Evaluation
+import java.util.Scanner;
+
+public class Evaluation 
 {
-	public static void main(String[] args)
-	{
-		int i;
-		char ch=0;
-		String exp="2+5*4-6/3";
-		System.out.println(exp.substring(1));
-		System.out.println(exp.substring(3));
-		System.out.println(exp.substring(5));
-		System.out.println(exp.substring(7));
-		for(i=0;i<exp.length();i++)
-		ch = exp.charAt(i);
-		switch(ch)
-		{
-		case '+':
-			String st=exp.substring(0)+exp.substring(2);
-			break;
-		case '-':
-			break;
-		case '*':
-			break;
-		case '/':
-			break;
-		default:
-			String val=exp.valueOf(ch);
-			System.out.println(val);
-		}
-	}
-	
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner(System.in);
+
+        // The result of the operation
+        int result = 0;
+
+        // The original input
+       // System.out.print("Enter an expression to compute: ");
+        String userInput = "3+4*5-4/2";
+
+        // The tokens that make up the input
+        String ch[] = userInput.split(" ");
+        int count=userInput.length();
+        System.out.println(ch);
+     }
+
 }
