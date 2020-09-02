@@ -24,7 +24,7 @@ public class Addition
 			else
 				sum=sum+arr.get(i);
 		}
-		System.out.println("Addition of the Numbers:" + sum);
+		System.out.println("Addition of the Numbers:" + sum+"\n");
 	
 	}
 	

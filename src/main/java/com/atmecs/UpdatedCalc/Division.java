@@ -28,7 +28,11 @@ public class Division
 		}
 		catch(Exception ex)
 		{
-			System.out.println(ex);
+			System.out.println(ex+"\n");
+		}
+		finally
+		{
+			System.out.println("A number can't divided by zero..\n");
 		}
 	}
 }

@@ -6,7 +6,8 @@ public class Subtraction
 {
 	void sub()
 	{
-		
+		try
+		{
 		Scanner scr = new Scanner(System.in);
 		int n,sum=0,i,list;
 		List<Integer> ls=new LinkedList<Integer>();
@@ -24,8 +25,16 @@ public class Subtraction
 		{
 			sum=sum-ls.get(i);
 		}
-		System.out.println("Subtraction of the Numbers:" + sum);
-		
+		System.out.println("Subtraction of the Numbers:" + sum+"\n");
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex+"\n");
+		}
+		finally
+		{
+			System.out.println("Exception might be thrown when enter mismatched type..\n");
+		}
 	}
 
 }

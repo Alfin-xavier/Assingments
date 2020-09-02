@@ -6,6 +6,8 @@ public class Multiplication
 {
 	void mul()
 	{
+		try
+		{
 		Scanner scr = new Scanner(System.in);
 		int n,sum=1,i;
 		System.out.println("Enter the quantity:");
@@ -17,7 +19,15 @@ public class Multiplication
 			a[i]=scr.nextInt();
 			sum=sum*a[i];
 		}
-		System.out.println("Multiplication of the Numbers:" + sum);
-		
+		System.out.println("Multiplication of the Numbers:" + sum+"\n");
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex+"\n");
+		}
+		finally
+		{
+			System.out.println("Exception might be thrown when array limit has exceeds..\n");
+		}
 	}
 }
