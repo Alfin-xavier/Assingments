@@ -54,7 +54,7 @@ public class Calculator {
 		}
 		finally
 		{
-			scr.close();
+		
 			System.out.println("Program Exited..\n");
 		}
 			

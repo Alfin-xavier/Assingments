@@ -12,7 +12,7 @@ public class Subtraction
 		System.out.println("Enter the quantity:");
 		n=scr.nextInt();
 		System.out.println("Enter the number:");
-		int a[]=new int[3];
+		int a[]=new int[4];
 		for(i=0;i<n;i++)
 		{
 			a[i]=scr.nextInt();

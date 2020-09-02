@@ -18,5 +18,6 @@ public class Multiplication
 			sum=sum*a[i];
 		}
 		System.out.println("Multiplication of the Numbers:" + sum);
+		scr.close();
 	}
 }
