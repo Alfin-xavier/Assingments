@@ -9,19 +9,20 @@ public class Division
 		try
 		{
 			Scanner scr = new Scanner(System.in);
-			int n,i,j;
+			int n,i,j,list;
+			List<Integer> ls=new ArrayList<Integer>();
 			System.out.println("Enter the quantity:");
 			n=scr.nextInt();
 			System.out.println("Enter the number:");
-			int a[]=new int[n];
 			for(i=0;i<n;i++)
 			{
-				a[i]=scr.nextInt();
+				list=scr.nextInt();
+				ls.add(list);
 			}
-			int sum=a[0];
+			int sum=ls.get(0);
 			for(j=1;j<n;j++)
 			{
-				sum=sum/a[j];
+				sum=sum/ls.get(j);
 			}
 				System.out.println("Division of the Numbers:" + sum+"\n");
 			

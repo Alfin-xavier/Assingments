@@ -10,7 +10,7 @@ public class Evaluation
 		try
 		{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Input your Expression:");
+		System.out.println("Input your Expression");
 		String expression1 = sc.next();
 		String[] operands = expression1.split("[\\+\\-\\*\\/]");
 		String[] operators = expression1.split("\\d+");
