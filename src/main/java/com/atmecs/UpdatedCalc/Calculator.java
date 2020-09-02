@@ -53,7 +53,7 @@ public class Calculator {
 		}
 		finally
 		{
-			
+			scr.close();
 			System.out.println("Process Stopped cause of the exception.");
 			
 		}

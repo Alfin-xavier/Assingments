@@ -22,7 +22,7 @@ public class Division
 				sum=sum/a[j];
 			}
 				System.out.println("Division of the Numbers:" + sum+"\n");
-			
+			scr.close();
 	}
 }
 

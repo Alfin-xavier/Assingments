@@ -8,12 +8,12 @@ public class Addition
 	public void add() throws NegativeException 
 	{
 		Scanner scr = new Scanner(System.in);
-		int n,sum=0,i,array;
+		int quant,sum=0,i,array;
 		List<Integer> arr=new ArrayList<Integer>();
 		System.out.println("Enter the quantity:");
-		n=scr.nextInt();
+		quant=scr.nextInt();
 		System.out.println("Enter the number:");
-		for(i=0;i<n;i++)
+		for(i=0;i<quant;i++)
 		{
 		 array=scr.nextInt();
 		 arr.add(array);
@@ -26,7 +26,7 @@ public class Addition
 		}
 		System.out.println("Addition of the Numbers:" + sum);
 	
-		
+		scr.close();
 	}
 	
 }

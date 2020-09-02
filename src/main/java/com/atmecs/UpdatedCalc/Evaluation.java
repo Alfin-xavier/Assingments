@@ -1,39 +1,29 @@
 package com.atmecs.updatedcalc;
 
+
 import java.util.Scanner;
 
-public class Evaluation 
-{
-	public void evaluation()
-	{
-	Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the Expression: ");
-		String exp = sc.next();
-		String[] operands = exp.split("[\\+\\-\\*\\/]");
-		String[] operators = exp.split("\\d+");
+public class Evaluation {
+
+	public void evaluation() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Input your Expression");
+		String expression1 = sc.next();
+		String[] operands = expression1.split("[\\+\\-\\*\\/]");
+		String[] operators = expression1.split("\\d+");
 		int result = 0;
-		for (int i = 0; i < operators.length; i++) 
-		{
-			int number = Integer.parseInt(operands[i]);
-			
-			if (operators[i].equals("+")) 
-			{
+		for (int index = 0; index < operators.length; index++) {
+			int number = Integer.parseInt(operands[index]);
+			if (operators[index].equals("+")) {
 				result = result + number;
-			} 
-			else if (operators[i].equals("-"))
-			{
+			} else if (operators[index].equals("-")) {
 				result = result - number;
-			} 
-			else if (operators[i].equals("*"))
-			{
+			} else if (operators[index].equals("*")) {
 				result = result * number;
-			} 
-			else if (operators[i].equals("/"))
-			{
+			} else if (operators[index].equals("/")) {
 				result = result / number;
-			} 
-			else 
-			{
+			} else {
 				result = result + number;
 			}
 		}
@@ -41,6 +31,5 @@ public class Evaluation
 
 		sc.close();
 	}
-	
 
 }
