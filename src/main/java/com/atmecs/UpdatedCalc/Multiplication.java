@@ -11,13 +11,13 @@ public class Multiplication
 		System.out.println("Enter the quantity:");
 		n=scr.nextInt();
 		System.out.println("Enter the number:");
-		int a[]=new int[n];
+		int a[]=new int[3];
 		for(i=0;i<n;i++)
 		{
 			a[i]=scr.nextInt();
 			sum=sum*a[i];
 		}
 		System.out.println("Multiplication of the Numbers:" + sum);
-		scr.close();
+		
 	}
 }

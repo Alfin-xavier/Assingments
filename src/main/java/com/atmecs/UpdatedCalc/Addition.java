@@ -26,7 +26,6 @@ public class Addition
 		}
 		System.out.println("Addition of the Numbers:" + sum);
 	
-		scr.close();
 	}
 	
 }

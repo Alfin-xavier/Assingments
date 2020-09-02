@@ -8,8 +8,6 @@ public class Calculator {
 	{
 		Scanner scr=new Scanner(System.in);
 		String op;
-		try
-		{
 		int opt,n;
 		do
 		{
@@ -46,17 +44,6 @@ public class Calculator {
 			op=scr.next();
 			
 		}while(op.equals("yes"));
-	}
-	catch(Exception ex)
-		{
-			System.out.println(ex+"\n");
-		}
-		finally
-		{
-			scr.close();
-			System.out.println("Process Stopped cause of the exception.");
-			
-		}
 			
 	}
 

@@ -6,6 +6,8 @@ public class Division
 {
 	void div() 
 	{
+		try
+		{
 			Scanner scr = new Scanner(System.in);
 			int n,i,j;
 			System.out.println("Enter the quantity:");
@@ -22,7 +24,12 @@ public class Division
 				sum=sum/a[j];
 			}
 				System.out.println("Division of the Numbers:" + sum+"\n");
-			scr.close();
+			
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
 	}
 }
 

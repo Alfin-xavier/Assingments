@@ -37,9 +37,8 @@ public class Evaluation
 				result = result + number;
 			}
 		}
-		System.out.println("Result = " + result);
+		System.out.println("Result = " + result+"\n");
 
-		sc.close();
 	}
 
 }
