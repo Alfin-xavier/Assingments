@@ -2,8 +2,6 @@ package com.atmecs.updatedcalc;
 
 import java.util.Scanner;
 
-import Selenium.Evaluation;
-
 public class Calculator {
 
 	public static void main(String[] args) throws NegativeException
