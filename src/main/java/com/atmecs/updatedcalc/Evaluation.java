@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Evaluation 
 {
-	public void evaluation() 
+	 void evaluation()
 	{
 		try
 		{
@@ -43,7 +43,7 @@ public class Evaluation
 		}
 		catch(Exception ex)
 		{
-			System.out.println("User entered an operator which is not in the array "+ex+"\n");
+			System.out.println("user tried to convert string to integer "+ex+"\n");
 		}
 		finally
 		{
