@@ -29,7 +29,7 @@ public class Division
 		}
 		catch(Exception ex)
 		{
-			System.out.println(ex+"\n");
+			System.out.println("User entered divisor as zero "+ex+"\n");
 		}
 		finally
 		{

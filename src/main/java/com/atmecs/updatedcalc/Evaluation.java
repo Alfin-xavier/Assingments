@@ -43,7 +43,7 @@ public class Evaluation
 		}
 		catch(Exception ex)
 		{
-			System.out.println(ex+"\n");
+			System.out.println("User entered an operator which is not in the array "+ex+"\n");
 		}
 		finally
 		{

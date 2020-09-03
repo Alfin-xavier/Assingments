@@ -29,7 +29,7 @@ public class Subtraction
 		}
 		catch(Exception ex)
 		{
-			System.out.println(ex+"\n");
+			System.out.println("User entered mismatched type of input "+ex+"\n");
 		}
 		finally
 		{

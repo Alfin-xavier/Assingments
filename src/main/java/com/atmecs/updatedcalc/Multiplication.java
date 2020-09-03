@@ -23,7 +23,7 @@ public class Multiplication
 		}
 		catch(Exception ex)
 		{
-			System.out.println(ex+"\n");
+			System.out.println("Array limit exceeded "+ex+"\n");
 		}
 		finally
 		{
