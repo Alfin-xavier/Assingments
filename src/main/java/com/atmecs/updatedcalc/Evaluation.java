@@ -43,7 +43,7 @@ public class Evaluation
 		}
 		catch(Exception ex)
 		{
-			System.out.println("user tried to convert string to integer "+ex+"\n");
+			System.out.println("user tried to convert a string into integer "+ex+"\n");
 		}
 		finally
 		{
