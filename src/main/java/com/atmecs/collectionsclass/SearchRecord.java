@@ -2,7 +2,7 @@ package com.atmecs.collectionsclass;
 
 import java.util.*;
 
-public class SearchRecord extends addrec
+public class SearchRecord extends AddRecord
 {
 	public void searchRecords()
 	{

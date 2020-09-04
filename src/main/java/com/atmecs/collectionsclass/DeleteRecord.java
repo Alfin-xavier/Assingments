@@ -1,6 +1,6 @@
 package com.atmecs.collectionsclass;
 
-public class DeleteRecord extends addrec
+public class DeleteRecord extends AddRecord
 {
 	public void deleteRecords()
 	{

@@ -22,7 +22,7 @@ public class MainClass
 			{
 			case 1:
 			{
-				addrec a = new addrec();
+				AddRecord a = new AddRecord();
 				a.add();
 				System.out.println("Record added successfully!!");
 				break;

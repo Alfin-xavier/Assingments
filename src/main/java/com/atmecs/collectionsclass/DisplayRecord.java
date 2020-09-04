@@ -2,7 +2,7 @@ package com.atmecs.collectionsclass;
 
 import java.util.*;
 
-public class DisplayRecord extends addrec
+public class DisplayRecord extends AddRecord
 {
 	public void dispRecords()
 	{
