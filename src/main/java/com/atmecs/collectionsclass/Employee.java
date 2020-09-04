@@ -11,6 +11,7 @@ public class Employee
 		String option;
 		do
 		{
+			System.out.println("\t** Collection Class **\n");
 			System.out.println("1. Addrecord  2.Search Record  3.Delete Record  4.Display Record\n");
 			System.out.println("Which operation you want to perform:");
 			int input = sc.nextInt();
