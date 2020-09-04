@@ -8,8 +8,8 @@ public class DeleteRecord extends AddRecord
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the id of the record you want to delete..");
-		String eid = sc.next();
-		if(eid.equals(map.get(id)))
+		int eid = sc.nextInt();
+		if(map.containsKey(eid))
 		{
 		map.remove(id);
 		System.out.println("Record deleted...");
