@@ -1,23 +1,23 @@
 package com.atmecs.collections;
 
+import java.util.*;
 public class SearchRecord extends AddRecord
 {
 	public	void search()
 	{
 		
 		System.out.println("Enter employee id to search an employee:");
-		emp_id=sc.nextInt();
-		if(emp_id==arraylist.get(emp_id))
+		int eid=sc.nextInt();
+		if(map.containsKey(eid))
 		{
-			display();
+			List<Object> list = (List<Object>) map.get(id);
+			System.out.println(list);
 		}
+		else
+		{
+			System.out.println("Record not found!!");
+		}
+		
 	}
 	
-	public void display()
-	{
-		System.out.println("Name:"+ emp_name);
-		System.out.println("Department:"+ dept_name);
-		System.out.println("Designation:"+ designation);
-		System.out.println("Salary:"+ salary);
-	}
 }
