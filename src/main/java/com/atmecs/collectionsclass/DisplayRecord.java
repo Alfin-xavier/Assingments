@@ -10,7 +10,7 @@ public class DisplayRecord extends AddRecord
 		 Set<Entry<String, List<String>>> st = m.entrySet();
 		for (Entry<String, List<String>> me : st)
 		{ 
-			System.out.print(me.getKey() + ":"); 
+			System.out.print(me.getKey()+ ":"); 
 			System.out.println(me.getValue());
 		}
 	}
