@@ -4,16 +4,11 @@ import java.util.*;
 
 public class Employee 
 {
-	String name , department , designation;
-	int id , salary;
-	static Scanner sc;
-	static String option;
-	static Map<Integer, List<String>> m;
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		// TODO Auto-generated method stub
-
-		sc = new Scanner(System.in);
-		m = new HashMap<Integer, List<String>>(); 
+		Scanner sc = new Scanner(System.in);
+		String option;
 		do
 		{
 			System.out.println("1. Addrecord  2.Search Record  3.Delete Record  4.Display Record\n");
@@ -47,9 +42,7 @@ public class Employee
 				break;
 			}
 			default:
-			{
 				System.out.println("Invalid selection ");
-			}
 			}
 			System.out.println("Do you want to continue?\n");
 			option = sc.next();

@@ -2,9 +2,9 @@ package com.atmecs.collectionsclass;
 
 import java.util.*;
 
-public class AddRecord extends Employee
+public class AddRecord extends GettingInputs
 {
-
+	Map<Integer, List<String>> m= new HashMap<Integer, List<String>>(); 
 	List<String> list = new ArrayList<String>();
 	
 	public void add()
