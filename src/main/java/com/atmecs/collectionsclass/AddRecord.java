@@ -9,7 +9,6 @@ public class AddRecord extends Employee
 	{
 		System.out.println("Enter id :");
 		String id = sc.next();
-
 		System.out.println("Enter name :");
 		list.add(sc.next());
 		System.out.println("Enter department :");
