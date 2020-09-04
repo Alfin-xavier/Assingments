@@ -16,7 +16,8 @@ public class MainClass
 		m = new HashMap<String, List<String>>(); 
 		do
 		{
-			System.out.println("Welcome!! Select the action you want to perform , \n1.Add a record \n2.Search a record with id \n3.Delete record with id \n4.Display all records");
+			System.out.println("1. Addrecord  2.Search Record  3.Delete Record  4.Display Record\n");
+			System.out.println("Which operation you want to perform:");
 			int input = sc.nextInt();
 			switch(input)
 			{
