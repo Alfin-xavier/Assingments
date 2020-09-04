@@ -2,7 +2,7 @@ package com.atmecs.collectionsclass;
 
 import java.util.*;
 
-public class AddRecord extends MainClass
+public class AddRecord extends Employee
 {
 
 	List<String> list = new ArrayList<String>();

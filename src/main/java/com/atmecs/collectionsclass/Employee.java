@@ -2,7 +2,7 @@ package com.atmecs.collectionsclass;
 
 import java.util.*;
 
-public class MainClass 
+public class Employee 
 {
 	String name , department , designation;
 	int id , salary;
