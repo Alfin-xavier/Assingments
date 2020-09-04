@@ -9,6 +9,7 @@ public class DisplayRecord extends AddRecord
 		 Set<Map.Entry<Integer, Object>> set = map.entrySet();
 			for (Map.Entry entry : set)
 			{ 
+				System.out.println("Employee Details\n");
 				System.out.print(entry.getKey() + " " + entry.getValue()); 
 				
 			}
