@@ -7,9 +7,10 @@ public class Evaluation
 {
 	 void evaluation()
 	{
+		 Scanner sc = new Scanner(System.in);
 		try
 		{
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Input your Expression");
 		String expression1 = sc.next();
 		String[] operands = expression1.split("[\\+\\-\\*\\/]");
@@ -47,6 +48,7 @@ public class Evaluation
 		}
 		finally
 		{
+			sc.close();
 			System.out.println("Exception might be thrown when you try to convert a String into a number.\n");
 		}
 	}

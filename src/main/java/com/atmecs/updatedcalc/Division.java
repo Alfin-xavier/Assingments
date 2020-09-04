@@ -6,9 +6,10 @@ public class Division
 {
 	void div() 
 	{
+		Scanner scr = new Scanner(System.in);
 		try
 		{
-			Scanner scr = new Scanner(System.in);
+			
 			int n,i,j,list;
 			List<Integer> ls=new ArrayList<Integer>();
 			System.out.println("Enter the quantity:");
@@ -33,6 +34,7 @@ public class Division
 		}
 		finally
 		{
+			scr.close();
 			System.out.println("A number can't divided by zero..\n");
 		}
 	}

@@ -6,9 +6,10 @@ public class Subtraction
 {
 	void sub()
 	{
+		Scanner scr = new Scanner(System.in);
 		try
 		{
-		Scanner scr = new Scanner(System.in);
+		
 		int n,sum=0,i,list;
 		List<Integer> ls=new LinkedList<Integer>();
 		System.out.println("Enter the quantity:");
@@ -33,6 +34,7 @@ public class Subtraction
 		}
 		finally
 		{
+			scr.close();
 			System.out.println("Exception might be thrown when enter mismatched type..\n");
 		}
 	}

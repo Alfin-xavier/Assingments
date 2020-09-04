@@ -8,7 +8,7 @@ public class Calculator {
 	{
 		Scanner scr=new Scanner(System.in);
 		String op;
-		int opt,n;
+		int opt;
 		do
 		{
 			System.out.println("\t\tArithmetic Calculations \n");	
@@ -44,7 +44,7 @@ public class Calculator {
 			op=scr.next();
 			
 		}while(op.equals("yes"));
-			
+			scr.close();
 	}
 
 }

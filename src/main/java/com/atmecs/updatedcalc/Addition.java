@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class Addition
 {
+	Scanner scr = new Scanner(System.in);
 	public void add() throws NegativeException 
 	{
-		Scanner scr = new Scanner(System.in);
+		
 		int quant,sum=0,i,array;
 		List<Integer> arr=new ArrayList<Integer>();
 		System.out.println("Enter the quantity:");
@@ -25,7 +26,7 @@ public class Addition
 				sum=sum+arr.get(i);
 		}
 		System.out.println("Addition of the Numbers:" + sum+"\n");
-	
+	scr.close();
 	}
 	
 }
