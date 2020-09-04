@@ -4,7 +4,7 @@ import java.util.*;
 
 public class GettingInputs 
 {
-	static ArrayList<Object> list=new ArrayList<Object>();
+	static List<Object> list=new ArrayList<Object>();
 	static Scanner sc=new Scanner(System.in);
 	static String name,dept_name,designation;
 	static int id,salary;
@@ -52,13 +52,6 @@ public class GettingInputs
 	{
 		System.out.println("Id : "+getid()+"\n"+"Name : "+getname()+"\n"+"Department : "+getdept_name()+"\n"+"Designation : "+getdesignation()+"\n"+"Salary : "+getsalary());
 	}
-	
-	public static void main(String[] arg)
-	{
-		
-		System.out.println("Enter The details: ");
-		GettingInputs.input();
-		
-	}
+
 }
 
