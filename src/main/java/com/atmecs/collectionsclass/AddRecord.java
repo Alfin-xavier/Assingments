@@ -4,7 +4,7 @@ import java.util.*;
 
 public class AddRecord extends GettingInputs
 {
-	Map<Integer, List<String>> m= new HashMap<Integer, List<String>>(); 
+	Map<Object, List<String>> m= new HashMap<Object, List<String>>(); 
 	List<String> list = new ArrayList<String>();
 	
 	public void add()
@@ -12,13 +12,17 @@ public class AddRecord extends GettingInputs
 		System.out.println("Enter id :");
 		int id = sc.nextInt();
 		System.out.println("Enter name :");
-		list.add(sc.next());
+		name=sc.next();
+		list.add(getname());
 		System.out.println("Enter department :");
-		list.add(sc.next());
+		dept_name=sc.next();
+		list.add(getdept_name());
 		System.out.println("Enter designation :");
-		list.add(sc.next());
+		designation=sc.next();
+		list.add(getdesignation());
 		System.out.println("Enter salary :");
-		list.add(sc.next());
+		salary=sc.next();
+		list.add(getsalary());
 		m.put(id, list);
 
 	}

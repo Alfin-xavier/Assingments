@@ -5,8 +5,8 @@ import java.util.*;
 public class GettingInputs 
 {
 	Scanner sc=new Scanner(System.in);
-	String name,dept_name,designation;
-	int id,salary;
+	String name,dept_name,designation,salary;
+	int id;
 		
 	public String getname()
 	{
@@ -20,7 +20,7 @@ public class GettingInputs
 	{
 		return designation;
 	}
-	public int getsalary()
+	public String getsalary()
 	{
 		return salary;
 	}
