@@ -8,12 +8,12 @@ public class Employee
 	int id , salary;
 	static Scanner sc;
 	static String option;
-	static Map<String, List<String>> m;
+	static Map<Integer, List<String>> m;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		sc = new Scanner(System.in);
-		m = new HashMap<String, List<String>>(); 
+		m = new HashMap<Integer, List<String>>(); 
 		do
 		{
 			System.out.println("1. Addrecord  2.Search Record  3.Delete Record  4.Display Record\n");
@@ -53,7 +53,8 @@ public class Employee
 			}
 			System.out.println("Do you want to continue?\n");
 			option = sc.next();
-		}while(option.equals("yes"));
+		}
+		while(option.equals("yes"));
 		System.out.println("Program exited...");
 	}
 }

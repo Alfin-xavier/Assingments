@@ -6,8 +6,9 @@ public class DisplayRecord extends AddRecord
 {
 	public void dispRecords()
 	{
-		 Set<Map.Entry<String, List<String>>> st = m.entrySet();
-		for (Map.Entry<String, List<String>> me : st) { 
+		 Set<Map.Entry<Integer, List<String>>> st = m.entrySet();
+		for (Map.Entry<Integer, List<String>> me : st)
+		{ 
 			System.out.print(me.getKey() + ":"); 
 			System.out.println(me.getValue());
 		}
