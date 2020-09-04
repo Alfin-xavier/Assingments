@@ -51,9 +51,9 @@ public class MainClass
 				System.out.println("Invalid selection ");
 			}
 			}
-			System.out.println("Do you want to continue your action?? Press Y for yes and N for no...");
+			System.out.println("Do you want to continue?\n");
 			option = sc.next();
-		}while(option.equalsIgnoreCase("y"));
+		}while(option.equals("yes"));
 		System.out.println("Program exited...");
 	}
 }
