@@ -7,7 +7,7 @@ public class AddRecord extends GettingInputs
 	
 	int emp,index,id;
 	
-	HashMap<Integer,Object> map=new HashMap<Integer,Object>();
+	Map<Integer,Object> map=new HashMap<Integer,Object>();
 	
 	Scanner sc=new Scanner(System.in);
 	void addRecord()
