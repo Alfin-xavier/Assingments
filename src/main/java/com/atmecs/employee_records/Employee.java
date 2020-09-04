@@ -4,8 +4,7 @@ import java.util.*;
 
 public class Employee 
 {
-	int emp,index,id,salary;
-	String name,dept_name,designation;
+	
 	public static void main(String[] args)
 	{
 		int choice;
