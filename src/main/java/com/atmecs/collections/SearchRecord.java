@@ -10,8 +10,7 @@ public class SearchRecord extends AddRecord
 		int eid=sc.nextInt();
 		if(map.containsKey(eid))
 		{
-			List<Object> list = (List<Object>) map.get(id);
-			System.out.println(list);
+			map.get(id);
 		}
 		else
 		{
