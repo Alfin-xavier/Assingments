@@ -2,29 +2,24 @@ package com.atmecs.collectionsclass;
 
 import java.util.*;
 
-public class AddRecord extends GettingInputs
+public class AddRecord extends Employee
 {
-	Map<Object, List<String>> m= new HashMap<Object, List<String>>(); 
 	List<String> list = new ArrayList<String>();
-	
 	public void add()
 	{
 		System.out.println("Enter id :");
-		int id = sc.nextInt();
+		String id = sc.next();
+
 		System.out.println("Enter name :");
-		name=sc.next();
-		list.add(getname());
+		list.add(sc.next());
 		System.out.println("Enter department :");
-		dept_name=sc.next();
-		list.add(getdept_name());
+		list.add(sc.next());
 		System.out.println("Enter designation :");
-		designation=sc.next();
-		list.add(getdesignation());
+		list.add(sc.next());
 		System.out.println("Enter salary :");
-		salary=sc.next();
-		list.add(getsalary());
+		list.add(sc.next());
 		m.put(id, list);
 
-	}
+		}
 
 }

@@ -1,13 +1,14 @@
 package com.atmecs.collectionsclass;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 public class DisplayRecord extends AddRecord
 {
 	public void dispRecords()
 	{
-		 Set<Map.Entry<Object, List<String>>> st = m.entrySet();
-		for (Map.Entry<Object, List<String>> me : st)
+		 Set<Entry<String, List<String>>> st = m.entrySet();
+		for (Entry<String, List<String>> me : st)
 		{ 
 			System.out.print(me.getKey() + ":"); 
 			System.out.println(me.getValue());

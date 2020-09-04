@@ -4,10 +4,16 @@ import java.util.*;
 
 public class Employee 
 {
+	static Map<String, List<String>> m=new HashMap<String, List<String>>();
+	String name , department , designation;
+	int id , salary;
+	static Scanner sc;
+	static String option;
+	
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		String option;
 		do
 		{
