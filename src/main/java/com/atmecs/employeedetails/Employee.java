@@ -45,9 +45,5 @@ public class Employee
 	{
 		this.salary=salary;
 	}
-	@Override
-	public String toString()
-	{
-		return "[id=" + empid + "| name=" + empname + "| department=" + department + "| designation=" + designation + "|salary="+ salary+"]";
-	}
+	
 }
