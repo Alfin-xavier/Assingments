@@ -1,11 +1,14 @@
 package com.atmecs.employeedetails;
 
+import java.io.Closeable;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 public class EmployeeMenu 
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws FileNotFoundException 
 	{
 		Map<Integer, Employee> employeeRecord=new HashMap<Integer,Employee>();
 		EmployeeOperations operations=new EmployeeOperations();
@@ -15,7 +18,7 @@ public class EmployeeMenu
 		do
 		{
 			System.out.println("\t** Employee Details **\n");
-			System.out.println("1.Add Record 2.Search Record 3.Delete Record 4.Update Record 5.Display Record \n");
+			System.out.println("1.Add Record 2.Search Record 3.Delete Record 4.Update Record 5.Display Record 6.Reading a file\n");
 			System.out.println("Select an option :");
 			option=scanner.nextInt();
 			
@@ -53,8 +56,15 @@ public class EmployeeMenu
 				Employee employee3=operations.updateRecord(empid, employeeRecord);
 				break;
 			case 5:
-				System.out.println("\t** Employee Record **\n");
+				System.out.println("\t** Employee Details **");
 				operations.displayRecord(employeeRecord);
+				break;
+			case 6:
+				File file = new File("C:\\Users\\alfin.anthonyraj\\Desktop\\empdet.txt");
+				scanner=new Scanner(file);
+				 while (scanner.hasNextLine()) 
+				      System.out.println(scanner.nextLine()); 
+				scanner.close();
 				break;
 			default:
 				System.out.println("Invalid Selection\n");
@@ -63,6 +73,7 @@ public class EmployeeMenu
 			choose=scanner.next();
 		}
 		while(choose.equals("yes"));
+		scanner.close();
 	}
 
 }
