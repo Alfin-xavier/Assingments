@@ -45,9 +45,14 @@ public class EmployeeOperations
 	
 	public Employee updateRecord(Integer empid,Map<Integer, Employee> employeeRecord)
 	{
-		Employee emp=employeeRecord.get(empid);
-		employeeRecord.replace(empid, emp);
-		return emp;
+		Set<Integer> empId=employeeRecord.keySet();
+		for(Integer display: empId)
+		{
+			Employee emp=employeeRecord.get(display);
+			employeeRecord.replace(empid, emp);
+			//System.out.println("Employee Id:"+emp.getEmpname()+"\n"+"Employee Name:"+emp.setEmpname(null)+"\n"+"Department:"+emp.setDepartment(null)+"\n"+"Designation:"+emp.setDesignation(null)+"\n"+"Salary:"+emp.setSalary(0)+"\n");
+		}
+		return null;
 		
 	}
 	public Employee fileoperations(Map<Integer, Employee> employeeRecord)  

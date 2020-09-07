@@ -1,6 +1,7 @@
 package com.atmecs.employeedetails;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.*;
@@ -18,7 +19,7 @@ public class EmployeeMenu
 		do
 		{
 			System.out.println("\t** Employee Details **\n");
-			System.out.println("1.Add Record 2.Search Record 3.Delete Record 4.Update Record 5.Display Record 6.Writing File 7.Reading File\n");
+			System.out.println("1.Add Record 2.Search Record 3.Delete Record 4.Update Record 5.Display Record 6.Read File 7.Write File \n");
 			System.out.println("Select an option :");
 			option=scanner.nextInt();
 			
@@ -49,6 +50,7 @@ public class EmployeeMenu
 				System.out.println("Enter id to delete Record:");
 				empid=scanner.nextInt();
 				boolean employee2=operations.deletRecord(empid, employeeRecord);
+				System.out.println("Record has been deleted..");
 				break;
 			case 4:
 				System.out.println("Enter id to update Record:");
