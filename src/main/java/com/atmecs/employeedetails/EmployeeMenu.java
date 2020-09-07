@@ -1,7 +1,6 @@
 package com.atmecs.employeedetails;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.*;
@@ -65,13 +64,12 @@ public class EmployeeMenu
 				PrintStream stream=new PrintStream(file);
 				PrintStream console = System.out;
 				System.out.println("Record has been printed in your file..!!");
-				System.out.println("==================================");
 				System.setOut(stream);
 				Employee employee4=operations.fileoperations(employeeRecord);
 				System.setOut(console); 
 				break;
 			case 7:
-				Employee employee5=((EmployeeOperations) employeeRecord).readFile();
+				Employee employee5=operations.readFile();
 				System.out.println("File has been read successfully");
 				break;
 			default:
