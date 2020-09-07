@@ -1,14 +1,15 @@
 package com.atmecs.employeedetails;
 
-import java.io.Closeable;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.util.*;
 
 public class EmployeeMenu 
 {
 
-	public static void main(String[] args) throws FileNotFoundException 
+	public static void main(String[] args) throws IOException 
 	{
 		Map<Integer, Employee> employeeRecord=new HashMap<Integer,Employee>();
 		EmployeeOperations operations=new EmployeeOperations();
@@ -18,7 +19,7 @@ public class EmployeeMenu
 		do
 		{
 			System.out.println("\t** Employee Details **\n");
-			System.out.println("1.Add Record 2.Search Record 3.Delete Record 4.Update Record 5.Display Record 6.Reading a file\n");
+			System.out.println("1.Add Record 2.Search Record 3.Delete Record 4.Update Record 5.Display Record 6.Writing File 7.Reading File\n");
 			System.out.println("Select an option :");
 			option=scanner.nextInt();
 			
@@ -51,20 +52,27 @@ public class EmployeeMenu
 				boolean employee2=operations.deletRecord(empid, employeeRecord);
 				break;
 			case 4:
-				System.out.println("Enter id to search Record:");
+				System.out.println("Enter id to update Record:");
 				empid=scanner.nextInt();
 				Employee employee3=operations.updateRecord(empid, employeeRecord);
 				break;
 			case 5:
-				System.out.println("\t** Employee Details **");
+				System.out.println("\t** Employee Record **\n");
 				operations.displayRecord(employeeRecord);
 				break;
 			case 6:
-				File file = new File("C:\\Users\\alfin.anthonyraj\\Desktop\\empdet.txt");
-				scanner=new Scanner(file);
-				 while (scanner.hasNextLine()) 
-				      System.out.println(scanner.nextLine()); 
-				scanner.close();
+				File file=new File("C:\\Users\\alfin.anthonyraj\\Desktop\\empdet.txt");
+				PrintStream stream=new PrintStream(file);
+				PrintStream console = System.out;
+				System.out.println("Record has been printed in your file..!!");
+				System.out.println("==================================");
+				System.setOut(stream);
+				Employee employee4=operations.fileoperations(employeeRecord);
+				System.setOut(console); 
+				break;
+			case 7:
+				Employee employee5=((EmployeeOperations) employeeRecord).readFile();
+				System.out.println("File has been read successfully");
 				break;
 			default:
 				System.out.println("Invalid Selection\n");
@@ -73,7 +81,6 @@ public class EmployeeMenu
 			choose=scanner.next();
 		}
 		while(choose.equals("yes"));
-		scanner.close();
 	}
 
 }

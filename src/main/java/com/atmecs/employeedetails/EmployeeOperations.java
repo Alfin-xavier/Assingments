@@ -1,5 +1,7 @@
 package com.atmecs.employeedetails;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 
 public class EmployeeOperations 
@@ -48,4 +50,29 @@ public class EmployeeOperations
 		return emp;
 		
 	}
+	public Employee fileoperations(Map<Integer, Employee> employeeRecord)  
+	{
+		Set<Integer> empId=employeeRecord.keySet();
+		for(Integer display: empId)
+		{
+			Employee emp=employeeRecord.get(display);
+			System.out.println("Employee Id:"+emp.getEmpid()+"\n"+"Employee Name:"+emp.getEmpname()+"\n"+"Department:"+emp.getDepartment()+"\n"+"Designation:"+emp.getDesignation()+"\n"+"Salary:"+emp.getSalary()+"\n");
+			
+		}
+		return null;
+
+	}
+	public Employee readFile() throws IOException
+	{
+	FileReader fr=new FileReader("C:\\Users\\alfin.anthonyraj\\Desktop\\empdet.txt");    
+	int i;    
+	while((i=fr.read())!=-1)    
+	{
+		System.out.print((char)i);  
+	}
+	System.out.println("\n");
+	fr.close();
+	return null;  
+	}
+
 }
