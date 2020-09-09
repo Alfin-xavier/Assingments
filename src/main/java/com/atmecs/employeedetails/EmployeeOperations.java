@@ -6,6 +6,7 @@ import java.util.*;
 
 public class EmployeeOperations 
 {
+	Scanner scanner=new Scanner(System.in);
 	public Employee addRecord(int empid,String empname,String department,String designation,int salary)
 	{
 		Employee emp=new Employee();
@@ -45,15 +46,27 @@ public class EmployeeOperations
 	
 	public Employee updateRecord(Integer empid,Map<Integer, Employee> employeeRecord)
 	{
-		Set<Integer> empId=employeeRecord.keySet();
-		for(Integer display: empId)
+		Employee emp=employeeRecord.get(empid);
+		employeeRecord.put(empid, emp);
+		System.out.println("Enter the field you want to modify:");
+		String field=scanner.next();
+		System.out.println("Enter the new value:");
+		if(field.equals("empname"))
 		{
-			Employee emp=employeeRecord.get(display);
-			employeeRecord.replace(empid, emp);
-			System.out.println("Employee Id:"+emp.setEmpid(empid)+"\n"+"Employee Name:"+emp.setEmpname(empname)+"\n"+"Department:"+emp.setDepartment(department)+"\n"+"Designation:"+emp.setDesignation(designation)+"\n"+"Salary:"+emp.setSalary(salary)+"\n");
+			field = scanner.next();
+			emp.setEmpname(field);
+		}
+		if(field.equals("department"))
+		{
+			field = scanner.next();
+			emp.setDepartment(field);
+		}
+		if(field.equals("designation"))
+		{
+			field = scanner.next();
+			emp.setDesignation(field);
 		}
 		return null;
-		
 	}
 	public Employee fileoperations(Map<Integer, Employee> employeeRecord)  
 	{
