@@ -50,7 +50,7 @@ public class EmployeeOperations
 		{
 			Employee emp=employeeRecord.get(display);
 			employeeRecord.replace(empid, emp);
-			//System.out.println("Employee Id:"+emp.getEmpname()+"\n"+"Employee Name:"+emp.setEmpname(null)+"\n"+"Department:"+emp.setDepartment(null)+"\n"+"Designation:"+emp.setDesignation(null)+"\n"+"Salary:"+emp.setSalary(0)+"\n");
+			System.out.println("Employee Id:"+emp.setEmpid(empid)+"\n"+"Employee Name:"+emp.setEmpname(empname)+"\n"+"Department:"+emp.setDepartment(department)+"\n"+"Designation:"+emp.setDesignation(designation)+"\n"+"Salary:"+emp.setSalary(salary)+"\n");
 		}
 		return null;
 		

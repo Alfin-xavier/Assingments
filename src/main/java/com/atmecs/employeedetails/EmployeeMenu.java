@@ -18,7 +18,7 @@ public class EmployeeMenu
 		String choose;
 		do
 		{
-			System.out.println("\t** Employee Details **\n");
+			System.out.println("\t\t\t\t** Employee Details **\n");
 			System.out.println("1.Add Record 2.Search Record 3.Delete Record 4.Update Record 5.Display Record 6.Read File 7.Write File \n");
 			System.out.println("Select an option :");
 			option=scanner.nextInt();
