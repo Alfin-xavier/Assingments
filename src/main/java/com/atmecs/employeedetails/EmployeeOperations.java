@@ -27,7 +27,8 @@ public class EmployeeOperations
 	
 	public boolean deletRecord(Integer empid,Map<Integer,Employee> employeeRecord) 
 	{
-		Employee emp=searchRecord(empid,employeeRecord);
+		Employee emp=employeeRecord.get(empid);
+		//Employee emp=searchRecord(empid,employeeRecord);
 		employeeRecord.remove(empid);	
 		return false;
 		
