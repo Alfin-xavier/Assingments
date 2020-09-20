@@ -34,7 +34,6 @@ public class Division
 		}
 		finally
 		{
-			scr.close();
 			System.out.println("A number can't divided by zero..\n");
 		}
 	}

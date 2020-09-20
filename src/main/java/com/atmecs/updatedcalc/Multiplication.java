@@ -28,7 +28,6 @@ public class Multiplication
 		}
 		finally
 		{
-			scr.close();
 			System.out.println("Exception might be thrown when array limit has exceeds..\n");
 		}
 	}

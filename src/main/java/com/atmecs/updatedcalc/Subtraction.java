@@ -34,7 +34,6 @@ public class Subtraction
 		}
 		finally
 		{
-			scr.close();
 			System.out.println("Exception might be thrown when enter mismatched type..\n");
 		}
 	}

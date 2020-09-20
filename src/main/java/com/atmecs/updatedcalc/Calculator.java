@@ -40,11 +40,12 @@ public class Calculator {
 			default: 
 				System.out.println("invalid Selection!!");
 			}
+			
 			System.out.println("Do you want to continue the process? YES or No \n");
 			op=scr.next();
-			
 		}while(op.equals("yes"));
-			scr.close();
+		scr.close();
+			
 	}
 
 }

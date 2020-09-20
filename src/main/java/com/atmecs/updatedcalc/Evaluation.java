@@ -48,7 +48,6 @@ public class Evaluation
 		}
 		finally
 		{
-			sc.close();
 			System.out.println("Exception might be thrown when you try to convert a String into a number.\n");
 		}
 	}
